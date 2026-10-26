@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome para las redes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- BARRA SUPERIOR -->
+<header class="navbar">
+    <div class="nav-profile">
+        <img src="perfil.jpg" alt="Foto de perfil" class="avatar">
+        <span class="profile-name">Yamith Alejandro Castaño P.</span>
+    </div>
+
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#inicio" data-i18n="nav_inicio">Inicio</a></li>
+            <li><a href="#sobre-mi" data-i18n="nav_sobre">Sobre mí</a></li>
+            <li><a href="#habilidades" data-i18n="nav_habilidades">Habilidades</a></li>
+            <li><a href="#proyectos" data-i18n="nav_proyectos">Proyectos</a></li>
+            <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav-actions">
+        <a href="HV_generation.pdf" target="_blank" class="btn-cv"><i class="fa-solid fa-file-lines"></i> <span data-i18n="btn_cv">CV</span></a>
+        <div class="lang-switch">
+            <span id="btn-es" class="active">ES</span>
+            <span id="btn-en">EN</span>
+        </div>
+    </div>
+</header>
+
+<!-- BARRA LATERAL FLOTANTE DE REDES (DERECHA) -->
+<aside class="social-sidebar">
+    <a href="https://linkedin.com/in/yamith-castano-gamedev" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://github.com/Yamith-Alejandro" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="#" target="_blank" title="Código / Repositorios"><i class="fa-solid fa-code"></i></a>
+    <a href="https://alejo-gene.itch.io/" target="_blank" title="Perfil"><i class="fa-solid fa-user"></i></a>
+</aside>
+
+<!-- SECCIÓN DE INICIO / HERO -->
+<section id="inicio" class="hero-section">
+    <div class="hero-text">
+        <h1 class="hero-name">Y. Alejandro <br><span class="highlight">Castaño P.</span></h1>
+
+        <div class="role-bar">
+            <span class="role-title" data-i18n="hero_roles">DESARROLLADOR DE SOFTWARE | DATA ANALYST | GAME DEV</span>
+        </div>
+
+        <div class="bio-card">
+            <p data-i18n="hero_bio">Desarrollador enfocado en crear experiencias interactivas y soluciones tecnológicas eficientes, combinando programación en C#/Python con análisis de datos y diseño funcional.</p>
+        </div>
+    </div>
+
+    <!-- MODELO 3D / RENDER TRANSPARENTE -->
+    <div class="hero-render-container">
+        <!-- Reemplaza 'modelo.png' por tu imagen recortada sin fondo -->
+        <img src="modelo.png" alt="Render 3D" class="hero-render-img">
+    </div>
+</section>
+
+<!-- SECCIÓN SOBRE MÍ -->
+<section id="sobre-mi" class="about-section">
+    <div class="about-container">
+        <div class="about-content">
+            <h2 class="section-title" data-i18n="about_title">Sobre Mí</h2>
+            <p data-i18n="about_p1">
+                Ayudo a construir experiencias interactivas donde el arte, el diseño y la programación funcionan como un solo sistema coherente. Con formación en desarrollo de software, análisis de datos y desarrollo de videojuegos en Unity, me especializo en la integración de sistemas de gameplay, física, análisis de datos y desarrollo funcional, combinando una visión técnica y estructurada del desarrollo.
+            </p>
+            <p data-i18n="about_p2">
+                He trabajado en entornos colaborativos y proyectos multidisciplinarios, asumiendo responsabilidades en programación backend y lógica, diseño de mecánicas y análisis. Mi enfoque se centra en crear sistemas sólidos, seguros y escalables, asegurando que la tecnología responda eficientemente a las necesidades del proyecto. Busco integrarme a un equipo donde pueda aportar desde el primer día y contribuir a aplicaciones y experiencias pulidas.
+            </p>
+            <a href="#contacto" class="btn-gradient" data-i18n="about_btn">Contáctame</a>
+        </div>
+
+        <div class="about-image-wrapper">
+            <img src="perfil.jpg" alt="Foto de Perfil" class="about-img">
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN CONSTELACIÓN DE HABILIDADES -->
+<section id="habilidades" class="skills-section">
+    <h2 class="section-title" data-i18n="skills_title">Constelación de Habilidades</h2>
+    <p class="section-subtitle" data-i18n="skills_subtitle">Explora mis habilidades profesionales</p>
+
+    <div class="skills-cards-grid">
+
+        <!-- TARJETA 1: Desarrollo -->
+        <div class="skill-card">
+            <div class="card-header">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3 data-i18n="card1_title">Desarrollo de Videojuegos</h3>
+            </div>
+            <div class="tags-container">
+                <span class="skill-pill" data-i18n="tag_gameplay">Programación de gameplay</span>
+                <span class="skill-pill">C# / Unity</span>
+                <span class="skill-pill" data-i18n="tag_physics">Física y colisiones</span>
+                <span class="skill-pill" data-i18n="tag_interactive">Sistemas interactivos</span>
+                <span class="skill-pill">Game design</span>
+                <span class="skill-pill" data-i18n="tag_leveldesign">Diseño de niveles</span>
+            </div>
+        </div>
+
+        <!-- TARJETA 2: Arte y Diseño -->
+        <div class="skill-card">
+            <div class="card-header">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h3 data-i18n="card2_title">Arte y Diseño Visual</h3>
+            </div>
+            <div class="tags-container">
+                <span class="skill-pill" data-i18n="tag_3dmodeling">Modelado 3D</span>
+                <span class="skill-pill" data-i18n="tag_texturing">Texturizado</span>
+                <span class="skill-pill" data-i18n="tag_retopology">Retopología</span>
+                <span class="skill-pill" data-i18n="tag_vector">Corte e Ilustración Vectorial</span>
+                <span class="skill-pill" data-i18n="tag_character">Diseño de personajes</span>
+                <span class="skill-pill" data-i18n="tag_artdirection">Dirección de arte</span>
+            </div>
+        </div>
+
+        <!-- TARJETA 3: Datos & Backend -->
+        <div class="skill-card">
+            <div class="card-header">
+                <i class="fa-solid fa-database"></i>
+                <h3 data-i18n="card3_title">Datos & Backend</h3>
+            </div>
+            <div class="tags-container">
+                <span class="skill-pill">Python / Colab</span>
+                <span class="skill-pill">FastAPI / Docker</span>
+                <span class="skill-pill">AWS (S3, Athena)</span>
+                <span class="skill-pill">SQL & MongoDB</span>
+                <span class="skill-pill">Power BI</span>
+                <span class="skill-pill" data-i18n="tag_cybersecurity">Ciberseguridad (FCF)</span>
+            </div>
+        </div>
+
+        <!-- TARJETA 4: Herramientas -->
+        <div class="skill-card">
+            <div class="card-header">
+                <i class="fa-solid fa-wrench"></i>
+                <h3 data-i18n="card4_title">Herramientas</h3>
+            </div>
+            <div class="tags-container">
+                <span class="skill-pill">Unity</span>
+                <span class="skill-pill">Blender</span>
+                <span class="skill-pill">Git / GitHub</span>
+                <span class="skill-pill">VS Code</span>
+                <span class="skill-pill">LightBurn</span>
+                <span class="skill-pill">VirtualBox / VMware</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECCIÓN PROYECTOS INTERACTIVOS -->
+<section id="proyectos" class="projects-section">
+    <h2 class="section-title" data-i18n="projects_title">Proyectos Interactivos</h2>
+    <p class="section-subtitle" data-i18n="projects_subtitle">Gameplay, arte y narrativa en cada experiencia</p>
+
+    <div class="projects-list">
+
+        <!-- PROYECTO 1 -->
+        <div class="project-card-horizontal">
+            <div class="project-image-wrapper">
+                <img src="https://via.placeholder.com/600x380/6366f1/ffffff?text=Tu+Proyecto+1" alt="Portada Proyecto 1" class="project-banner">
+            </div>
+
+            <div class="project-info">
+                <div class="project-title-container">
+                    <i class="fa-solid fa-sparkles project-icon"></i>
+                    <h3 data-i18n="p1_title">Nombre del Juego / Proyecto</h3>
+                </div>
+                <p class="project-description" data-i18n="p1_desc">
+                    Descripción corta de tu juego en Unity/C#. Explica la mecánica principal, la historia o el estilo de juego (por ejemplo: Arcade, plataformas, estrategia o aventura interactiva).
+                </p>
+                <div class="project-buttons">
+                    <a href="https://github.com/tu-usuario/repositorio" target="_blank" class="btn-outline">
+                        <span data-i18n="btn_code">Ver Código</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://tu-usuario.itch.io/tu-juego" target="_blank" class="btn-itch">
+                        <i class="fa-brands fa-itch-io"></i> Itch.io
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTO 2 -->
+        <div class="project-card-horizontal">
+            <div class="project-image-wrapper">
+                <img src="https://via.placeholder.com/600x380/d946ef/ffffff?text=Tu+Proyecto+2" alt="Portada Proyecto 2" class="project-banner">
+            </div>
+
+            <div class="project-info">
+                <div class="project-title-container">
+                    <i class="fa-solid fa-gamepad project-icon"></i>
+                    <h3 data-i18n="p2_title">Segundo Juego / Demostración</h3>
+                </div>
+                <p class="project-description" data-i18n="p2_desc">
+                    Otra experiencia interactiva creada por ti. Puedes destacar las tecnologías usadas, el diseño de niveles o los efectos visuales desarrollados.
+                </p>
+                <div class="project-buttons">
+                    <a href="https://github.com/tu-usuario/repositorio" target="_blank" class="btn-outline">
+                        <span data-i18n="btn_code">Ver Código</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://tu-usuario.itch.io/tu-juego" target="_blank" class="btn-itch">
+                        <i class="fa-brands fa-itch-io"></i> Itch.io
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECCIÓN CONTACTO / COLABOREMOS -->
+<section id="contacto" class="contact-section">
+    <h2 class="section-title" data-i18n="contact_title">Colaboremos</h2>
+    <p class="section-subtitle" data-i18n="contact_subtitle">¿Tienes un proyecto interactivo en mente? Hablemos sobre cómo integrar arte, código y datos.</p>
+
+    <div class="contact-card">
+        <form action="https://formspree.io/f/mzeepqll" method="POST" class="contact-form">
+
+            <div class="form-group">
+                <label for="name" data-i18n="lbl_name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" data-i18n-ph="ph_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" data-i18n="lbl_email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" data-i18n="lbl_message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." data-i18n-ph="ph_message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-gradient btn-submit" data-i18n="btn_send">Enviar mensaje</button>
+        </form>
+    </div>
+</section>
+
+<!-- PIE DE PÁGINA (FOOTER) -->
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2026 Yamith Alejandro Castaño P. — Interactive Portfolio</p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/yamith-castano-gamedev" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Yamith-Alejandro" target="_blank">GitHub</a>
+            <a href="https://alejo-gene.itch.io/" target="_blank">Itch.io</a>
+            <a href="#" target="_blank">ArtStation</a>
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPT DE TRADUCCIÓN DINÁMICA (ES / EN) -->
+<script>
+    const dictionary = {
+        es: {
+            nav_inicio: "Inicio",
+            nav_sobre: "Sobre mí",
+            nav_habilidades: "Habilidades",
+            nav_proyectos: "Proyectos",
+            nav_contacto: "Contacto",
+            btn_cv: "CV",
+            hero_roles: "DESARROLLADOR DE SOFTWARE | DATA ANALYST | GAME DEV",
+            hero_bio: "Desarrollador enfocado en crear experiencias interactivas y soluciones tecnológicas eficientes, combinando programación en C#/Python con análisis de datos y diseño funcional.",
+            about_title: "Sobre Mí",
+            about_p1: "Ayudo a construir experiencias interactivas donde el arte, el diseño y la programación funcionan como un solo sistema coherente. Con formación en desarrollo de software, análisis de datos y desarrollo de videojuegos en Unity, me especializo en la integración de sistemas de gameplay, física, análisis de datos y desarrollo funcional, combinando una visión técnica y estructurada del desarrollo.",
+            about_p2: "He trabajado en entornos colaborativos y proyectos multidisciplinarios, asumiendo responsabilidades en programación backend y lógica, diseño de mecánicas y análisis. Mi enfoque se centra en crear sistemas sólidos, seguros y escalables, asegurando que la tecnología responda eficientemente a las necesidades del proyecto. Busco integrarme a un equipo donde pueda aportar desde el primer día y contribuir a aplicaciones y experiencias pulidas.",
+            about_btn: "Contáctame",
+            skills_title: "Constelación de Habilidades",
+            skills_subtitle: "Explora mis habilidades profesionales",
+            card1_title: "Desarrollo de Videojuegos",
+            tag_gameplay: "Programación de gameplay",
+            tag_physics: "Física y colisiones",
+            tag_interactive: "Sistemas interactivos",
+            tag_leveldesign: "Diseño de niveles",
+            card2_title: "Arte y Diseño Visual",
+            tag_3dmodeling: "Modelado 3D",
+            tag_texturing: "Texturizado",
+            tag_retopology: "Retopología",
+            tag_vector: "Corte e Ilustración Vectorial",
+            tag_character: "Diseño de personajes",
+            tag_artdirection: "Dirección de arte",
+            card3_title: "Datos & Backend",
+            tag_cybersecurity: "Ciberseguridad (FCF)",
+            card4_title: "Herramientas",
+            projects_title: "Proyectos Interactivos",
+            projects_subtitle: "Gameplay, arte y narrativa en cada experiencia",
+            p1_title: "Nombre del Juego / Proyecto",
+            p1_desc: "Descripción corta de tu juego en Unity/C#. Explica la mecánica principal, la historia o el estilo de juego (por ejemplo: Arcade, plataformas, estrategia o aventura interactiva).",
+            p2_title: "Segundo Juego / Demostración",
+            p2_desc: "Otra experiencia interactiva creada por ti. Puedes destacar las tecnologías usadas, el diseño de niveles o los efectos visuales desarrollados.",
+            btn_code: "Ver Código",
+            contact_title: "Colaboremos",
+            contact_subtitle: "¿Tienes un proyecto interactivo en mente? Hablemos sobre cómo integrar arte, código y datos.",
+            lbl_name: "Nombre",
+            ph_name: "Tu nombre",
+            lbl_email: "Email",
+            lbl_message: "Mensaje",
+            ph_message: "Cuéntame sobre tu proyecto...",
+            btn_send: "Enviar mensaje"
+        },
+        en: {
+            nav_inicio: "Home",
+            nav_sobre: "About Me",
+            nav_habilidades: "Skills",
+            nav_proyectos: "Projects",
+            nav_contacto: "Contact",
+            btn_cv: "Resume",
+            hero_roles: "SOFTWARE DEVELOPER | DATA ANALYST | GAME DEV",
+            hero_bio: "Developer focused on creating interactive experiences and efficient tech solutions, combining C#/Python programming with data analytics and functional design.",
+            about_title: "About Me",
+            about_p1: "I help build interactive experiences where art, design, and programming function as a cohesive system. With a background in software development, data analytics, and game development in Unity, I specialize in integrating gameplay systems, physics, data analysis, and functional development.",
+            about_p2: "I have worked in collaborative environments and multidisciplinary projects, taking responsibility for backend programming, game logic, mechanic design, and analytics. My focus is on creating solid, secure, and scalable systems. I am seeking to join a team where I can contribute from day one to deliver polished applications.",
+            about_btn: "Contact Me",
+            skills_title: "Skill Constellation",
+            skills_subtitle: "Explore my professional skills",
+            card1_title: "Game Development",
+            tag_gameplay: "Gameplay Programming",
+            tag_physics: "Physics & Collisions",
+            tag_interactive: "Interactive Systems",
+            tag_leveldesign: "Level Design",
+            card2_title: "Art & Visual Design",
+            tag_3dmodeling: "3D Modeling",
+            tag_texturing: "Texturing",
+            tag_retopology: "Retopology",
+            tag_vector: "Vector Cutting & Illustration",
+            tag_character: "Character Design",
+            tag_artdirection: "Art Direction",
+            card3_title: "Data & Backend",
+            tag_cybersecurity: "Cybersecurity (FCF)",
+            card4_title: "Tools",
+            projects_title: "Interactive Projects",
+            projects_subtitle: "Gameplay, art, and narrative in every experience",
+            p1_title: "Game / Project Name",
+            p1_desc: "Short description of your game in Unity/C#. Explain the core mechanic, story, or genre (e.g., Arcade, platformer, strategy, or interactive adventure).",
+            p2_title: "Second Game / Demo",
+            p2_desc: "Another interactive experience created by you. Highlight the technologies used, level design, or visual effects developed.",
+            btn_code: "View Code",
+            contact_title: "Let's Collaborate",
+            contact_subtitle: "Do you have an interactive project in mind? Let's talk about integrating art, code, and data.",
+            lbl_name: "Name",
+            ph_name: "Your name",
+            lbl_email: "Email",
+            lbl_message: "Message",
+            ph_message: "Tell me about your project...",
+            btn_send: "Send message"
+        }
+    };
+
+    function setLanguage(lang) {
+        // Actualizar textos simples
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+            const key = el.getAttribute("data-i18n");
+            if (dictionary[lang] && dictionary[lang][key]) {
+                el.textContent = dictionary[lang][key];
+            }
+        });
+
+        // Actualizar placeholders de inputs
+        document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+            const key = el.getAttribute("data-i18n-ph");
+            if (dictionary[lang] && dictionary[lang][key]) {
+                el.placeholder = dictionary[lang][key];
+            }
+        });
+
+        // Cambiar estilos activos en botones
+        const btnEs = document.getElementById("btn-es");
+        const btnEn = document.getElementById("btn-en");
+        if (lang === 'es') {
+            btnEs.classList.add("active");
+            btnEn.classList.remove("active");
+        } else {
+            btnEn.classList.add("active");
+            btnEs.classList.remove("active");
+        }
+    }
+
+    document.getElementById("btn-es").addEventListener("click", () => setLanguage('es'));
+    document.getElementById("btn-en").addEventListener("click", () => setLanguage('en'));
+</script>
+
+</body>
+</html>
